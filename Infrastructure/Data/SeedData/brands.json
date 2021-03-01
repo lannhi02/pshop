@@ -1,0 +1,26 @@
+[
+  {
+    "Id": 1,
+    "Name": "Chanel"
+  },
+  {
+    "Id": 2,
+    "Name": "DKNY"
+  },
+  {
+    "Id": 3,
+    "Name": "Dior"
+  },
+  {
+    "Id": 4,
+    "Name": "D&G"
+  },
+  {
+    "Id": 5,
+    "Name": "Gucci"
+  },
+  {
+    "Id": 6,
+    "Name": "Giorgio Armani"
+  }
+]
