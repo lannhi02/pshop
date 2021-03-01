@@ -22,11 +22,12 @@ namespace API
                 {
                     var context = services.GetRequiredService<StoreContext>();
                     await context.Database.MigrateAsync();
+                    await StoreContextSeed.SeedAsync(context, loggerFactory);
                 }
                 catch (Exception ex)
                 {
                     var logger = loggerFactory.CreateLogger<Program>();
-                    logger.LogError(ex, "An error occurred during migration");
+                    logger.LogError(ex, "Có lỗi xảy ra - An error occurred during migration");
                 }
             }
 
