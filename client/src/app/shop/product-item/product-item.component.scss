@@ -1,7 +1,14 @@
 .btn-group {
-    width: 100%
+    width: 100%;        
 }
 
-.btn {
-    width: 50%
+.btn-gradient {
+    text-transform: uppercase;
+	background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
+
+// .btn {
+//     width: 50%
+// }
