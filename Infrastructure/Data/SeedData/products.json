@@ -37,7 +37,7 @@
     "Price": 2300000,
     "PictureUrl": "images/products/p05.jpg",
     "ProductTypeId": 1,
-    "ProductBrandId": 5
+    "ProductBrandId": 6
   },
   {
     "Name": "Gucci Bloom Ambrosia Di Fiori EDP 100ML",
@@ -45,6 +45,6 @@
     "Price": 3100000,
     "PictureUrl": "images/products/p06.jpg",
     "ProductTypeId": 2,
-    "ProductBrandId": 6
+    "ProductBrandId": 5
   }
 ]
