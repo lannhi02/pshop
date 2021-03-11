@@ -1,0 +1,12 @@
+<header>
+    <br>
+    <span class="text-muted" *ngIf="totalCount && totalCount > 0">
+        Từ {{(pageNumber-1) * pageSize+1}} đến
+        {{(pageNumber*pageSize
+            > this.totalCount 
+            ? this.totalCount
+            : pageNumber*pageSize
+            )}} / {{this.totalCount}} sản phẩm
+    </span>
+    <span class="text-muted" *ngIf="totalCount === 0">0 kết quả</span>
+</header>
