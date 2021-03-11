@@ -38,10 +38,10 @@
                 ></app-paging-header>
                
                 <div class="form-inline mt-2">
-                    <input class="form-control mr-2" style="width: 300px" type="text" placeholder="Tìm kiếm">
-                    <button class="btn btn-outline-secondary my-2 i-gradient"><i
+                    <input (keyup.enter)="onSearch()" class="form-control mr-2" #search style="width: 300px" type="text" placeholder="Tìm kiếm">
+                    <button (click)="onSearch()" class="btn btn-outline-secondary my-2 i-gradient"><i
                             class="fa fa-search font-weight-bold"></i></button>
-                    <button class="btn btn-outline-secondary ml-2 my-2 i-gradient"><i
+                    <button (click)="onReset()" class="btn btn-outline-secondary ml-2 my-2 i-gradient"><i
                             class="fa fa-repeat font-weight-bold"></i></button>
                 </div>
             </div>
