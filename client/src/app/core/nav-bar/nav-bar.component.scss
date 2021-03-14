@@ -17,3 +17,20 @@
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
+
+a{
+    &.active {
+    text-transform: uppercase;
+	background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+    }
+}
+
+.logo {
+    cursor: pointer;
+
+    &:focus {
+        outline: none;
+    }
+}
