@@ -1,19 +1,22 @@
-<header class="d-flex flex-column flex-md-row align-items-center justify-content-between p-3 px-md-4 mb-3 bg-body border-bottom shadow-sm">
-    <!-- <p class="h5 my-0 me-md-auto fw-normal">Company name</p> -->
+<header class="d-flex flex-column flex-md-row align-items-center justify-content-between p-3 px-md-4 mb-3 bg-body border-bottom shadow-sm">   
     <img src="/assets/images/logo.png" style="max-height: 70px; margin-left: 70px;" alt="logo" routerLink="/"/>
-    <nav class="my-2 my-md-0 me-md-3 text-uppercase font-weight-bold nav-gradient" style="font-size: large">
+    <nav class="my-2 my-md-0 me-md-3 text-uppercase font-weight-bold" style="font-size: large">
+
       <!-- <a class="p-2 text-decoration-none" [routerLink]="['/']" routerLinkActive="active"
         [routerLinkActiveOptions] = "{exact: true}">Trang chủ</a> -->
+
       <a class="p-2 text-decoration-none" [routerLink]="['/']">Trang chủ</a>
       <a class="p-2 text-decoration-none" routerLink="/shop">Sản phẩm</a>
       <a class="p-2 text-decoration-none" routerLink="/test-error">Lỗi</a>
+
     </nav>
+
     <div class="d-flex align-items-center">        
         <a class="position-relative">
-            <i class="fa fa-shopping-cart fa-2x mr-5 text-dark font-weight-bold nav-gradient"></i>
+            <i class="fa fa-shopping-cart fa-2x mr-5 text-primary font-weight-bold"></i>
             <div class="cart-no">5</div>
         </a>
-        <a class="btn btn-outline-secondary mr-2 font-weight-bold nav-gradient">Login</a>
-        <a class="btn btn-outline-secondary mr-3 font-weight-bold nav-gradient">Sign up</a>
+        <a class="btn btn-outline-primary mr-2 font-weight-bold">Login</a>
+        <a class="btn btn-outline-primary mr-3 font-weight-bold">Sign up</a>
     </div>
   </header>

@@ -1,15 +1,15 @@
 <div class="row" *ngIf="product">
     <div class="col-6">
-        <img src="{{product.pictureUrl}}" alt="{{product.name}}" class="img-fluid w-75">
+        <img src="{{product.pictureUrl}}" alt="{{product.name}}" class="img-fluid w-75">        
     </div>
     <div class="col-6">
         <h3>{{product.name}}</h3>
-        <p class="text-danger font-weight-bold">{{product.price | currency}}</p>
+        <p class="text-danger font-weight-bold">{{product.price | currency: 'VND'}}</p>
         <div class="d-flex justify-content-start align-items-center">
-            <i class="fa fa-minus-circle add-gradient mr-2" style="cursor: pointer; font-size:2em"></i>
+            <i class="fa fa-minus-circle text-danger mr-2" style="cursor: pointer; font-size:2em"></i>
             <span class="font-weight-bold" style="font-size: 1em;">2</span>
-            <i class="fa fa-plus-circle add-gradient mx-2" style="cursor: pointer; font-size:2em"></i>
-            <button class="btn btn-outline-secondary btn-gradient font-weight-bold ml-4">Thêm vào giỏ hàng</button>
+            <i class="fa fa-plus-circle text-danger mx-2" style="cursor: pointer; font-size:2em"></i>
+            <button class="btn btn-outline-primary font-weight-bold ml-4">Thêm vào giỏ hàng</button>
         </div>
         <h5 class="mt-4">Mùi hương</h5>
         <p>{{product.description}}</p>
