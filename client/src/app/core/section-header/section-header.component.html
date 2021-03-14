@@ -1,9 +1,10 @@
 <ng-container *ngIf="(breadcrumb$ | async) as breadcrumbs">
-    <section *ngIf="breadcrumbs.length > 0 && breadcrumbs[breadcrumbs.length-1].label !== 'Trang chủ'" class="py-5" style="margin-top: 100px;">
+    <section *ngIf="breadcrumbs.length > 0 && breadcrumbs[breadcrumbs.length-1].label !== 'Trang chủ'" class="py-5">
         <div class="container">
             <div class="row d-flex align-items-center">
                 <div class="col-9">
-                   <h1 class="font-weight-bold">{{breadcrumbs.length > 0 && breadcrumbs[breadcrumbs.length-1].label | titlecase}}</h1> 
+                    <h1 class="font-weight-bold ml-3">{{breadcrumbs.length > 0 &&
+                        breadcrumbs[breadcrumbs.length-1].label | titlecase}}</h1>
                 </div>
                 <div class="col-3">
                     <xng-breadcrumb></xng-breadcrumb>
