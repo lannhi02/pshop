@@ -1,4 +1,4 @@
-<div class="container mt-1">
+<div class="container">
     <div *ngIf="(basket$ | async) === null">
         <p>Không có sản phẩm nào trong giỏ hàng của bạn.</p>
     </div>
@@ -68,6 +68,15 @@
                                 </tbody>
                             </table>
                         </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-5 offset-6">
+                        <app-order-totals></app-order-totals>
+                        <a routerLink="/checkout" class="btn btn-outline-primary py-2 btn-block">
+                            Thanh toán
+                        </a>
                     </div>
                 </div>
             </div>
