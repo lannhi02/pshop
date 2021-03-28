@@ -1,0 +1,32 @@
+<div class="form-group">
+    <input 
+        [ngClass]="(controlDir && controlDir.control
+        && controlDir.control.touched) ? !controlDir.control.valid ? 'is-invalid' : 'is-valid' : null"
+        [type]="type"
+        (input)="onChange($event.target.value)"
+        (blur)="onTouched()"
+        id="{{label}}"
+        #input
+        class="form-control"
+        placeholder={{label}}
+    >
+
+    <div class="invalid-feedback" *ngIf="(controlDir && controlDir.control
+                                        && !controlDir.control.valid 
+                                        && controlDir.control.touched)">
+        <span *ngIf="controlDir.control.errors?.required">Chưa nhập {{label}}</span>
+        <span *ngIf="controlDir.control.errors?.pattern">Email sai định dạng</span>
+    </div>
+
+    <!-- <span class="text-danger" *ngIf="loginForm.get('email').invalid
+      && loginForm.get('email').touched
+      && loginForm.get('email').errors['required']">
+        Bạn chưa nhập email
+    </span>
+
+    <span class="text-danger" *ngIf="loginForm.get('email').invalid
+      && loginForm.get('email').touched
+      && loginForm.get('email').errors['pattern']">
+        Email không đúng định dạng
+    </span> -->
+</div>
