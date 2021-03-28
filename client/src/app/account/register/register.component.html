@@ -1,1 +1,19 @@
-<p>register works!</p>
+<div>
+    <form class="form-signin" [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+      <div class="text-center mb-4">
+        <h1 class="h3 mb-3 font-weight-normal">Đăng ký</h1>
+      </div>
+  
+      <app-text-input formControlName="displayName" [label]="'tên người dùng'"></app-text-input>
+      <app-text-input formControlName="email" [label]="'email'"></app-text-input>
+      <app-text-input formControlName="password" [label]="'mật khẩu'" [type]="'password'"></app-text-input>
+
+      <ul class="text-danger list-unstyled" *ngIf="errors">
+          <li *ngFor="let error of errors">
+              {{error}}
+          </li>
+      </ul>
+
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Register</button>
+    </form>
+  </div>
