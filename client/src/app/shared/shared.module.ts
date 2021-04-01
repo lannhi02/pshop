@@ -9,17 +9,20 @@ import { OrderTotalsComponent } from './components/order-totals/order-totals.com
 import { ReactiveFormsModule } from '@angular/forms';
 import { from } from 'rxjs';
 import { TextInputComponent } from './text-input/text-input.component';
+import { CdkStepperModule } from '@angular/cdk/stepper';
+import { StepperComponent } from './components/stepper/stepper.component'
 
 
 
 @NgModule({
-  declarations: [PagingHeaderComponent, PagerComponent, OrderTotalsComponent, TextInputComponent],
+  declarations: [PagingHeaderComponent, PagerComponent, OrderTotalsComponent, TextInputComponent, StepperComponent],
   imports: [
     CommonModule,
     PaginationModule.forRoot(),
     CarouselModule.forRoot(),
     BsDropdownModule.forRoot(),
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    CdkStepperModule
   ],
   exports: [
     PaginationModule,
@@ -29,7 +32,9 @@ import { TextInputComponent } from './text-input/text-input.component';
     OrderTotalsComponent,
     ReactiveFormsModule,
     BsDropdownModule,
-    TextInputComponent
+    TextInputComponent,
+    CdkStepperModule,
+    StepperComponent
   ]
 })
 export class SharedModule { }
