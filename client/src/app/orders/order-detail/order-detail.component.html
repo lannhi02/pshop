@@ -53,6 +53,10 @@
             <div class="p-4">
                 <ul class="list-unstyled mb-1">
                     <li class="d-flex justify-content-between py-3 norder-bottom">
+                        <strong class="text-muted">Sản phẩm</strong>
+                        <strong>{{order.subtotal | currency: 'VND'}}</strong>
+                    </li>
+                    <li class="d-flex justify-content-between py-3 norder-bottom">
                         <strong class="text-muted">Phí giao hàng</strong>
                         <strong>{{order.shippingPrice | currency: 'VND'}}</strong>
                     </li>
