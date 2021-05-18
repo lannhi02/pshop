@@ -2,7 +2,7 @@
   {
     "Name": "Chanel Bleu De Chanel EDP 100ML",
     "Description": "Quả Bưởi Tây (Grapefruit) Mùi Khói Thơm (Incense)",
-    "Price": 3700000,
+    "Price": 37,
     "PictureUrl": "images/products/p01.jpg",
     "ProductTypeId": 1,
     "ProductBrandId": 1
@@ -10,7 +10,7 @@
   {
     "Name": "DKNY Stories EDP 100ML",
     "Description": "Hạt Tiêu Hồng (Pink Pepper) Hương Va-ni (Vanilla) Gỗ Đàn Hương (Sandalwood) Hoa Nhài (Jasmine) Long Diên Hương (Ambergris) Hoa Diên Vỹ (Iris) Quả Ổi (Guava) Bạch Đậu Khấu (Cardamom)",
-    "Price": 2000000,
+    "Price": 20,
     "PictureUrl": "images/products/p02.jpg",
     "ProductTypeId": 2,
     "ProductBrandId": 2
@@ -18,7 +18,7 @@
   {
     "Name": "Dior Sauvage Parfum 100ML",
     "Description": "Bergamot Amber Vanilla",
-    "Price": 3900000,
+    "Price": 39,
     "PictureUrl": "images/products/p03.jpg",
     "ProductTypeId": 1,
     "ProductBrandId": 3
@@ -26,7 +26,7 @@
   {
     "Name": "Dolce & Gabbana The Only One EDP For Women 100ML",
     "Description": "Hương Va-ni (Vanilla) Hương Caramel Cà phê",
-    "Price": 2900000,
+    "Price": 29,
     "PictureUrl": "images/products/p04.jpg",
     "ProductTypeId": 2,
     "ProductBrandId": 4
@@ -34,7 +34,7 @@
   {
     "Name": "Giorgio Armani Acqua Di Gio Profumo Pour Homme 75ML",
     "Description": "Hương Biển (Sea Notes) Mùi Khói Thơm (Incense)",
-    "Price": 2300000,
+    "Price": 23,
     "PictureUrl": "images/products/p05.jpg",
     "ProductTypeId": 1,
     "ProductBrandId": 6
@@ -42,7 +42,7 @@
   {
     "Name": "Gucci Bloom Ambrosia Di Fiori EDP 100ML",
     "Description": "Oriental floral",
-    "Price": 3100000,
+    "Price": 31,
     "PictureUrl": "images/products/p06.jpg",
     "ProductTypeId": 2,
     "ProductBrandId": 5

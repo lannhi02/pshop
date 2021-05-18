@@ -1,22 +1,22 @@
 [
   {
     "Id": 1,
-    "ShortName": "UPS1",
-    "Description": "Giao hàng nhanh",
+    "ShortName": "S1",
+    "Description": "Giao hàng nhanh 1-2 ngày",
     "DeliveryTime": "1-2 ngày",
-    "Price": 50000
+    "Price": 5
   },
   {
     "Id": 2,
-    "ShortName": "UPS2",
-    "Description": "Giao hàng tiết kiệm",
+    "ShortName": "S2",
+    "Description": "Giao hàng tiết kiệm 5-10 ngày",
     "DeliveryTime": "5-10 ngày",
-    "Price": 35000
+    "Price": 3
   },
   {
     "Id": 3,
     "ShortName": "FREE",
-    "Description": "Miễn phí giao hàng",
+    "Description": "Miễn phí giao hàng 1-2 tuần",
     "DeliveryTime": "1-2 tuần",
     "Price": 0
   }

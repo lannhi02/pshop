@@ -2,6 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { FormGroup } from '@angular/forms';
 import { Toast, ToastrService } from 'ngx-toastr';
 import { AccountService } from 'src/app/account/account.service';
+import { IAddress } from 'src/app/shared/models/address';
 
 @Component({
   selector: 'app-checkout-address',
@@ -18,12 +19,12 @@ export class CheckoutAddressComponent implements OnInit {
 
   saveUserAddress() {
     this.accountService.updateUserAddress(this.checkoutForm.get('addressForm').value)
-      .subscribe(() => {
+      .subscribe((address: IAddress) => {
         this.toastr.success('Đã lưu địa chỉ mặc định');
+        this.checkoutForm.get('addressForm').reset(address);
     }, error => {
       this.toastr.error(error.message);
       console.log(error);
     })
   }
-
 }
